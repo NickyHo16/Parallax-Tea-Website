@@ -1,0 +1,94 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.header1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.header2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*nicht % - denn jede Szene volle Höhe*/
+    transform-style: preserve-3d;
+    z-index: -1; /*statt -1, bei mehreren Szenen verschwindet der ganze Block hinter anderen Elementen, stattdessen Bilder z-index -1*/
+}
+
+
+
+.background {
+    transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+    transform: translateZ(-5px) scale(2);
+}
+
+.background,
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    /*inset: 0; /*ersetzt height/width 100%*/
+    object-fit: cover;
+    /*z-index: -1; /*Bilder hinter den Text*/
+
+}
+
+.background2 {
+    transform: translateZ(-10px) scale(2);
+}
+
+.foreground2 {
+    transform: translateZ(-5px) scale(2);
+}
+
+.background2,
+.foreground2 {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    /*inset: 0; /*ersetzt height/width 100%*/
+    object-fit: cover;
+    /*z-index: -1; /*Bilder hinter den Text*/
+
+}
+
+.title {
+    font-size: 120px;
+    color: rgb(16 47 26);
+    text-shadow: 0 0 5px black;   
+}
+
+section {
+    font-size: 24px;
+    padding: 2px;
+    background-color: rgb(95, 120, 103);
+    color: rgb(16 47 26);
+}
