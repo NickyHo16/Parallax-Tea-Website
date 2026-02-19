@@ -1,6 +1,7 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -10,17 +11,7 @@ body {
     perspective: 10px;
 }
 
-.header1 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    transform-style: preserve-3d;
-    z-index: -1;
-}
-
-.header2 {
+.atf-image {
     position: relative;
     display: flex;
     justify-content: center;
@@ -40,8 +31,6 @@ body {
     z-index: -1; /*statt -1, bei mehreren Szenen verschwindet der ganze Block hinter anderen Elementen, stattdessen Bilder z-index -1*/
 }
 
-
-
 .background {
     transform: translateZ(-10px) scale(2);
 }
@@ -58,37 +47,83 @@ body {
     /*inset: 0; /*ersetzt height/width 100%*/
     object-fit: cover;
     /*z-index: -1; /*Bilder hinter den Text*/
-
-}
-
-.background2 {
-    transform: translateZ(-10px) scale(2);
-}
-
-.foreground2 {
-    transform: translateZ(-5px) scale(2);
-}
-
-.background2,
-.foreground2 {
-    position: absolute;
-    height: 100%;
-    width: 100vw;
-    /*inset: 0; /*ersetzt height/width 100%*/
-    object-fit: cover;
-    /*z-index: -1; /*Bilder hinter den Text*/
-
 }
 
 .title {
     font-size: 120px;
-    color: rgb(16 47 26);
-    text-shadow: 0 0 5px black;   
+    color: rgb(16 47 26);      
+    filter: opacity(0.89);
 }
 
 section {
-    font-size: 24px;
-    padding: 2px;
-    background-color: rgb(95, 120, 103);
+    font-size: 16px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
     color: rgb(16 47 26);
+}
+
+header {
+    font-size: 16px;
+    padding: 16px;
+    background-color: rgb(16 47 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+header img {
+    width: 25px;
+    height: auto;
+}
+
+header a {
+    color: rgb(255 255 255);
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+/* sorting-section*/
+
+.sorting-section {
+    background-color: rgb(138 183 152);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 64px;      
+    overflow: hidden;
+}
+
+.sorting-section img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 0px solid rgb(16 47 26);
+}
+
+.sorting-section img:hover {
+    cursor: pointer;
+    /*transform: scale(1.05); /* Vergrößert das Bild um 20% */
+    /*transition: transform 0.3s ease; /* Sanfter Übergang */  
+    transform: scale(1.05);
+    transition: .5s ease;
+}
+
+footer {
+    font-size: 16px;
+    padding: 16px;
+    background-color: rgb(16 47 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: rgb(255 255 255);
+    text-decoration: none;
+    padding: 5px;
 }
