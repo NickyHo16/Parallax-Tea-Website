@@ -9,6 +9,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
+    scroll-behavior: smooth !important;
 }
 
 .atf-image {
@@ -65,9 +66,9 @@ section {
 header {
     font-size: 16px;
     padding: 16px;
-    background-color: rgb(16 47 26);
+    background-color: rgb(16, 47, 26, 0.8);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
     width: 100%;
@@ -77,6 +78,7 @@ header {
 header img {
     width: 25px;
     height: auto;
+    padding-left: 16px;
 }
 
 header a {
@@ -85,11 +87,39 @@ header a {
     padding: 5px;
 }
 
+header a:hover {
+    filter: drop-shadow(4px 6px 8px rgb(66, 206, 66));
+    color: rgba(16 47 26);
+}
+
+header img:hover {
+    filter: drop-shadow(4px 6px 8px rgb(66, 206, 66));
+}
+
+.menu-list {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.social-media-logo {
+    width: 20px;
+    height: auto;
+    padding-left: 16px;
+}
+
+.social-media-logo:hover {
+    filter: drop-shadow(0px 0px 1px rgb(66, 255, 66));
+    color: rgba(16 47 26);
+    cursor: pointer;
+
+}
+
 
 /* sorting-section*/
 
 .sorting-section {
-    background-color: rgb(138 183 152);
+    /*background-color: rgb(16, 47, 26);*/
+    background-color: rgb(23, 67, 37);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -98,10 +128,10 @@ header a {
 }
 
 .sorting-section img {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
-    border-radius: 16px;
+    border-radius: 8px;
     border: 0px solid rgb(16 47 26);
 }
 
@@ -116,7 +146,7 @@ header a {
 footer {
     font-size: 16px;
     padding: 16px;
-    background-color: rgb(16 47 26);
+    background-color: rgb(16, 47, 26, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,4 +156,20 @@ footer a {
     color: rgb(255 255 255);
     text-decoration: none;
     padding: 5px;
+}
+
+footer a:hover {
+    filter: drop-shadow(4px 6px 8px rgb(66, 206, 66));
+    color: rgba(16 47 26);
+}
+
+footer img {
+    width: 25px;
+    height: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+footer img:hover {
+    filter: drop-shadow(4px 6px 8px rgb(66, 206, 66));
 }
