@@ -118,21 +118,27 @@ header img:hover {
 /* sorting-section*/
 
 .sorting-section {
-    /*background-color: rgb(16, 47, 26);*/
-    background-color: rgb(23, 67, 37);
-    display: flex;
+    background-color: rgba(169, 202, 179, 1);
+    color: rgb(16 47 26);
+    /*display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around;*/
     padding: 64px;      
     overflow: hidden;
 }
 
+.sortDescription{
+    display: flex;
+    padding: 32px;
+}
+
 .sorting-section img {
-    height: 300px;
+    height: 150px;
     width: 300px;
     object-fit: cover;
     border-radius: 8px;
     border: 0px solid rgb(16 47 26);
+    margin-left: 18px;
 }
 
 .sorting-section img:hover {
