@@ -58,9 +58,10 @@ body {
 
 section {
     font-size: 16px;
-    padding: 16px;
+    padding: 40px;
     background-color: rgb(255, 255, 255);
     color: rgb(16 47 26);
+    text-align: justify;
 }
 
 header {
@@ -123,13 +124,20 @@ header img:hover {
     /*display: flex;
     align-items: center;
     justify-content: space-around;*/
-    padding: 64px;      
+    padding: 40px;      
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .sortDescription{
-    display: flex;
-    padding: 32px;
+   display: table-cell;
+   padding: 16px;
+}
+
+.sortParts {
+    text-align: justify;
+    width: 300px;
 }
 
 .sorting-section img {
@@ -138,7 +146,7 @@ header img:hover {
     object-fit: cover;
     border-radius: 8px;
     border: 0px solid rgb(16 47 26);
-    margin-left: 18px;
+    /*margin-left: 18px;*/
 }
 
 .sorting-section img:hover {
