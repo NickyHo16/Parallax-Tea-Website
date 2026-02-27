@@ -128,6 +128,8 @@ header img:hover {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .sortDescription{
@@ -187,3 +189,22 @@ footer img {
 footer img:hover {
     filter: drop-shadow(4px 6px 8px rgb(66, 206, 66));
 }
+
+
+
+
+@media (max-width: 700px) { 
+
+    .title {
+        font-size: 90px;
+    }
+
+ }
+
+  @media (max-width: 580px) { 
+
+    .title {
+        font-size: 70px;
+    }
+
+ }
