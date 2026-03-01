@@ -1,4 +1,13 @@
-<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburg");
+  if (!hamburger) return;
+  hamburger.addEventListener("click", function () {
+    this.classList.toggle("checked");
+  });
+});
+
+
+
 
 let products = [
   {
@@ -35,4 +44,3 @@ let products = [
 
 
 
-</script>
