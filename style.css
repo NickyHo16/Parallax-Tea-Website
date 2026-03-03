@@ -4,6 +4,8 @@ body {
     scroll-behavior: smooth;
 }
 
+/* parallax-section*/
+
 .wrapper {
     height: 100vh;
     overflow-y: auto;
@@ -64,6 +66,8 @@ section {
     text-align: justify;
 }
 
+/* header-section*/
+
 header {
     font-size: 16px;
     padding: 16px;
@@ -115,13 +119,15 @@ header img:hover {
 
 }
 
+/* hamburger-section*/
+
 .hamburg { 
    display: block;
    width: 30px; 
    position: absolute;
    right: 20px;
    top: 5px;
-   margin-right: 64px;   
+   margin-right: 140px;   
    transition: border-radius .5s;
 }
 
@@ -195,6 +201,8 @@ header img:hover {
     transition: .5s ease;
 }
 
+/* footer-section*/
+
 footer {
     font-size: 16px;
     padding: 16px;
@@ -226,10 +234,12 @@ footer img:hover {
     filter: drop-shadow(4px 6px 8px rgb(66, 206, 66));
 }
 
+/* responsive-design*/
+
 @media (min-width: 700px) { 
 
-    .menu-list a {
-        
+    .row {
+        display: none;
     }
 
  }
