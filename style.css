@@ -125,9 +125,10 @@ header img:hover {
    display: block;
    width: 30px; 
    position: absolute;
-   right: 20px;
-   top: 5px;
-   margin-right: 140px;   
+   /*right: 20px;*/ /*für die Positionierung auf der Linken Seite des Headers
+   /*margin-right: 140px;*/
+   left: 65px;
+   top: 3px;      
    transition: border-radius .5s;
 }
 
