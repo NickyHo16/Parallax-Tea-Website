@@ -170,6 +170,32 @@ header img:hover {
    transform: translateY(-12px) rotate(45deg);
 }
 
+/*Burger-Menu*/
+.burgerMenue{
+    background-color: #ffffff63;
+    display: flex;
+    position: absolute;
+    font-size: 25px;    
+    top: 61px;
+    width: stretch;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.burgerMenue a {
+    text-decoration: none;
+    color: rgb(16 47 26);
+}
+
+.nav-main {
+  display: none;
+}
+
+.hidden {
+  display: block;
+}
 
 /* sorting-section*/
 
