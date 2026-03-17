@@ -6,6 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+//hide Burger Menu
+
+let toggleButton = document.querySelector('.hamburg'); //.toggl-btn
+let navLinks = document.querySelector('.nav-main');
+
+toggleButton.addEventListener('click', function() {
+  navLinks.classList.toggle('hidden');
+});
+
 
 
 
