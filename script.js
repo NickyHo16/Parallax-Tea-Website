@@ -1,18 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburg");
-  if (!hamburger) return;
+  const navLinks = document.querySelector(".burgerMenue");
+
+  if (!hamburger || !navLinks) return;
+
   hamburger.addEventListener("click", function () {
     this.classList.toggle("checked");
+    navLinks.classList.toggle("hidden");
   });
-});
-
-//hide Burger Menu
-
-let toggleButton = document.querySelector('.hamburg'); //.toggl-btn
-let navLinks = document.querySelector('.nav-main');
-
-toggleButton.addEventListener('click', function() {
-  navLinks.classList.toggle('hidden');
 });
 
 
