@@ -278,6 +278,23 @@ footer img:hover {
     filter: drop-shadow(4px 6px 8px rgb(66, 206, 66));
 }
 
+/* 2page*/
+
+.shopList {
+    width: 350px;
+    height: 200px;
+    border-radius: 25px;
+    border-color: black;
+    
+
+}
+
+.shopList img {
+    width: 150px;
+    height: 100px;
+    
+}
+
 /* responsive-design*/
 
 @media (min-width: 700px) { 
