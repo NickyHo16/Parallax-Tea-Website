@@ -281,18 +281,23 @@ footer img:hover {
 /* 2page*/
 
 .shopList {
-    width: 350px;
+    width: 450px;
     height: 200px;
+    border-style: inset;
     border-radius: 25px;
-    border-color: black;
-    
+    border-color: rgb(208, 206, 206);
+    margin: 25px;
+    background-color: antiquewhite;
 
 }
 
 .shopList img {
-    width: 150px;
-    height: 100px;
-    
+    width: 50%;
+    height: 150px;
+    padding: 25px;
+    border-radius: 40px;
+
+
 }
 
 /* responsive-design*/
