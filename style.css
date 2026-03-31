@@ -14,8 +14,14 @@ body {
     scroll-behavior: smooth !important;
 }
 
-
-
+.secondPageBackground {
+    background-image: url(img/backgroundherbs2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Optional: Bild füllt den Bereich aus */
+    padding: 25px;
+    height: 100vh;
+}
 
 .atf-image {
     position: relative;
@@ -237,6 +243,20 @@ header img:hover {
     /*transition: transform 0.3s ease; /* Sanfter Übergang */  
     transform: scale(1.05);
     transition: .5s ease;
+}
+
+/* second-page*/
+
+button {
+    width: 100px;
+    height: auto;
+    background-color: rgb(184 140 205 / 40%);
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
 }
 
 /* footer-section*/
