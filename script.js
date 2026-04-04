@@ -10,6 +10,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+let plants = ['Salvia','Rosemary','Thymian','Lavendula'];
+let plantDescript = [
+  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, neque quidem. Quod, adipisci unde vel necessitatibus nulla asperiores? Similique, porro?',
+  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, neque quidem. Quod, adipisci unde vel necessitatibus nulla asperiores? Similique, porro?',
+  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, neque quidem. Quod, adipisci unde vel necessitatibus nulla asperiores? Similique, porro?',
+  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, neque quidem. Quod, adipisci unde vel necessitatibus nulla asperiores? Similique, porro?',
+];
+let plantPic = [
+  'src="./img/thym.jpg"',
+  'src="./img/thym.jpg"',
+  'src="./img/thym.jpg"',
+  'src="./img/thym.jpg"',
+];
+
 
 
 
