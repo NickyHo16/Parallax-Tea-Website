@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+
+// Arrays Shop Artikle
 let plants = ['Salvia','Rosemary','Thymian','Lavendula'];
 let plantDescript = [
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, neque quidem. Quod, adipisci unde vel necessitatibus nulla asperiores? Similique, porro?',
@@ -18,11 +21,44 @@ let plantDescript = [
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, neque quidem. Quod, adipisci unde vel necessitatibus nulla asperiores? Similique, porro?',
 ];
 let plantPic = [
-  'src="./img/thym.jpg"',
-  'src="./img/thym.jpg"',
-  'src="./img/thym.jpg"',
-  'src="./img/thym.jpg"',
+  './img/thym.jpg',
+  './img/thym.jpg',
+  './img/thym.jpg',
+  './img/thym.jpg',
 ];
+
+function render(){
+  renderContent();
+}
+
+function renderContent() {
+  let content = document.getElementById('plantContent');
+  content.innerHTML = '';
+
+  for (let i = 0; i < plants.length; i++) {
+    const plants = plants[i];
+    const plantDescript = plantDescript[i];
+    const plantPic = plantPic[i];
+
+    content.innerHTML += generateContentHTML(i, plants, plantDescript, plantPic);
+
+  }
+}
+
+function generateContentHTML(i, plants, plantDescript, plantPic){
+  return `
+  
+            <div class="sortDescription">
+                <div class="sortParts">
+                <a href="sorts.html" target="_blank"><h3>${plants}</h3></a>
+                <p>${plantDescript}</p>
+                </div>
+                <img src="${plantPic}">
+            </div>
+  
+  `;
+
+}
 
 
 
