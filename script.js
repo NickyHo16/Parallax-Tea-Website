@@ -35,25 +35,26 @@ function renderContent() {
   let content = document.getElementById('plantContent');
   content.innerHTML = '';
 
-  for (let i = 0; i < plants.length; i++) {
-    const plants = plants[i];
-    const plantDescript = plantDescript[i];
-    const plantPic = plantPic[i];
+  console.log(content);
 
-    content.innerHTML += generateContentHTML(i, plants, plantDescript, plantPic);
+  for (let i = 0; i < plants.length; i++) {
+    const plantsName = plants[i];
+    const plantDescription = plantDescript[i];
+    const plantPicture = plantPic[i];
+
+    content.innerHTML += generateContentHTML(plantsName, plantDescription, plantPicture);
 
   }
 }
 
-function generateContentHTML(i, plants, plantDescript, plantPic){
-  return `
-  
+function generateContentHTML(plantsName, plantDescription, plantPicture){
+  return `  
             <div class="sortDescription">
                 <div class="sortParts">
-                <a href="sorts.html" target="_blank"><h3>${plants}</h3></a>
-                <p>${plantDescript}</p>
+                <a href="sorts.html" target="_blank"><h3>${plantsName}</h3></a>
+                <p>${plantDescription}</p>
                 </div>
-                <img src="${plantPic}">
+                <img src="${plantPicture}">
             </div>
   
   `;
