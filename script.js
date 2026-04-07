@@ -45,6 +45,7 @@ function renderContent() {
     content.innerHTML += generateContentHTML(plantsName, plantDescription, plantPicture);
 
   }
+  render();
 }
 
 function generateContentHTML(plantsName, plantDescription, plantPicture){
@@ -58,7 +59,6 @@ function generateContentHTML(plantsName, plantDescription, plantPicture){
             </div>
   
   `;
-
 }
 
 
