@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     this.classList.toggle("checked");
     navLinks.classList.toggle("hidden");
   });
+
 });
 
 
@@ -21,10 +22,10 @@ let plantDescript = [
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, neque quidem. Quod, adipisci unde vel necessitatibus nulla asperiores? Similique, porro?',
 ];
 let plantPic = [
+  './img/sage.jpg',
+  './img/rosemary.jpg',
   './img/thym.jpg',
-  './img/thym.jpg',
-  './img/thym.jpg',
-  './img/thym.jpg',
+  './img/lavendula.jpg',
 ];
 
 function render(){
@@ -45,7 +46,7 @@ function renderContent() {
     content.innerHTML += generateContentHTML(plantsName, plantDescription, plantPicture);
 
   }
-  render();
+ 
 }
 
 function generateContentHTML(plantsName, plantDescription, plantPicture){
@@ -60,6 +61,10 @@ function generateContentHTML(plantsName, plantDescription, plantPicture){
   
   `;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  render();
+});
 
 
 
