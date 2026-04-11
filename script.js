@@ -68,6 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+let shopArticle = ['Salvia','Rosemary','Thymian','Lavendula'];
+
 
 let products = [
   {
