@@ -69,6 +69,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 let shopArticle = ['Salvia','Rosemary','Thymian','Lavendula'];
+let shopPlant = ['bla','bla'];
+let shopPic = [
+  './img/sage.jpg',
+];
+
 
 
 let products = [
