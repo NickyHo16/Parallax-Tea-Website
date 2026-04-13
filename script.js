@@ -74,6 +74,12 @@ let shopPic = [
   './img/sage.jpg',
 ];
 
+function renderShop() {
+  let contentShop = document.getElementById('plantContent');
+    contentShop.innerHTML = '';
+
+  console.log(contentShop);
+  };
 
 
 let products = [
