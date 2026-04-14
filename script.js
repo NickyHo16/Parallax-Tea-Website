@@ -69,17 +69,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 let shopArticle = ['Salvia','Rosemary','Thymian','Lavendula'];
-let shopPlant = ['bla','bla'];
+let shopPlant = ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam.',
+                 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam.',
+                 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam.'];
 let shopPic = [
-  './img/sage.jpg',
+  'img/lavendula.jpg',
+  'img/lavendula.jpg',
+  'img/lavendula.jpg'
 ];
 
 function renderShop() {
-  let contentShop = document.getElementById('plantContent');
+  let contentShop = document.getElementById('shopContent');
     contentShop.innerHTML = '';
 
   console.log(contentShop);
+
+for (let i = 0; i < shopArticle.length; i++) {
+    const plantsArticle = shopArticle[i];
+    const plantsshop = shopPlant[i];
+    const picturesShop = shopPic[i];
+
+    content.innerHTML += generateContentHTML(plantsArticle, plantsshop, picturesShop);
+
+  }
+
   };
+
+
 
 
 let products = [
