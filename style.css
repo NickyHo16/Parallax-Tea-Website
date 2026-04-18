@@ -245,7 +245,7 @@ header img:hover {
     background-size: cover; /* Optional: Bild füllt den Bereich aus */
     padding: 25px;
     padding-top: 100px;
-    height: 100vh;
+    /*height: 100vh;*/
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -254,7 +254,6 @@ header img:hover {
 .titleShopItem {
     margin-top: 8px;
     margin-bottom: 0;
-
 }
 
 .itemDescription {

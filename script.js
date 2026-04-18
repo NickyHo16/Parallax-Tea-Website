@@ -89,11 +89,28 @@ for (let i = 0; i < shopArticle.length; i++) {
     const plantsshop = shopPlant[i];
     const picturesShop = shopPic[i];
 
-    content.innerHTML += generateContentHTML(plantsArticle, plantsshop, picturesShop);
+    content.innerHTML += generateShopContentHTML(plantsArticle, plantsshop, picturesShop);
 
   }
 
-  };
+  }
+  
+  function generateContentHTML(plantsName, plantDescription, plantPicture){
+  return `  
+            <div class="sortDescription">
+                <div class="sortParts">
+                <a href="sorts.html" target="_blank"><h3>${plantsName}</h3></a>
+                <p>${plantDescription}</p>
+                </div>
+                <img src="${plantPicture}">
+            </div>
+  
+  `;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  render();
+});
 
 
 
