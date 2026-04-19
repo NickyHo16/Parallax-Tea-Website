@@ -30,6 +30,7 @@ let plantPic = [
 
 function render(){
   renderContent();
+  renderShop();
 }
 
 function renderContent() {
@@ -71,8 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
 let shopArticle = ['Salvia','Rosemary','Thymian','Lavendula'];
 let shopPlant = ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam.',
                  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam.',
+                 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam.',
                  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam.'];
 let shopPic = [
+  'img/lavendula.jpg',
   'img/lavendula.jpg',
   'img/lavendula.jpg',
   'img/lavendula.jpg'
@@ -89,20 +92,22 @@ for (let i = 0; i < shopArticle.length; i++) {
     const plantsshop = shopPlant[i];
     const picturesShop = shopPic[i];
 
-    content.innerHTML += generateShopContentHTML(plantsArticle, plantsshop, picturesShop);
+    contentShop.innerHTML += generateShopContentHTML(plantsArticle, plantsshop, picturesShop);
 
   }
 
   }
   
-  function generateContentHTML(plantsName, plantDescription, plantPicture){
+  function generateShopContentHTML(plantsArticle, plantsshop, picturesShop){
   return `  
-            <div class="sortDescription">
-                <div class="sortParts">
-                <a href="sorts.html" target="_blank"><h3>${plantsName}</h3></a>
-                <p>${plantDescription}</p>
-                </div>
-                <img src="${plantPicture}">
+            <img src="${picturesShop}" alt="shop-image-lavendula">
+            <div>
+            <h5 class="titleShopItem">${plantsArticle}</h5>
+            <p class="itemDescription">${plantsshop}
+            </p>
+            <button class="css-button-sliding-to-bottom--green">
+                buy now
+            </button>
             </div>
   
   `;
