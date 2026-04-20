@@ -81,6 +81,13 @@ let shopPic = [
   'img/lavendula.jpg'
 ];
 
+let shop2Pic = [
+  'img/lavendula.jpg',
+  'img/lavendula.jpg',
+  'img/lavendula.jpg',
+  'img/lavendula.jpg'
+];
+
 function renderShop() {
   let contentShop = document.getElementById('shopContent');
     contentShop.innerHTML = '';
