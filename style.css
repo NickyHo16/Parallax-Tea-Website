@@ -226,6 +226,7 @@ header img:hover {
     border-radius: 8px;
     border: 0px solid rgb(16 47 26);
     /*margin-left: 18px;*/
+    transition: transform 0.3s ease;
 }
 
 .sorting-section img:hover {
